@@ -15,3 +15,11 @@ REST-Rant is an app where users can review restaurants
 | POST   | /places/:id/rant         | Create a rant (comment) about a particular place |
 | DELETE | /places/:id/rant/:rantId | Delete a rant (comment) about a particular place |
 | GET    | *                        | 404 page (matches any route not defined above)   |
+
+## Restaurants
+| Name     | City          | State | Cuisines         | Pic |
+|----------|---------------|-------|------------------|-----|
+| Pizza Pi | San Jose      | CA    | Italian          | pic |
+| JavaBean | San Mateo     | CA    | Coffee Shop      | pic |
+| READMEat | San Diego     | CA    | Sandwich Shop    | pic |
+| PromICE  | San Fransisco | CA    | Ice Cream Parlor | pic |

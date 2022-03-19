@@ -14,6 +14,7 @@ function show (data) {
             </button>
           </form>  
             <h1>{ data.place.name}</h1>
+            <img src={data.place.pic} alt="Pic of food" />
             <h2>Rating</h2>
             <p>not rated</p>
             <h3>Comments</h3>

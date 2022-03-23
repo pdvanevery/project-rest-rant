@@ -7,6 +7,8 @@ function new_form () {
             <main>
                 <h1>Add a New Place</h1>
                 <form method="POST" action="/places">
+                <div className='row d-flex justify-content-center'>
+                    <div className='col-sm-6 col-md-4 col-lg-3'>
                 <div className='form-group'>
                     <label htmlFor="name">Place Name</label>
                     <input className='form-control' id="name" name="name" required />
@@ -15,6 +17,8 @@ function new_form () {
                     <label for="founded">Founded Year</label>
                     <input className="form-control" id="founded" name="founded" />
                 </div>
+                </div>
+                <div className='col-sm-6 col-md-4 col-lg-3'>
                 <div className='form-group'>
                     <label htmlFor="pic">Place Picture</label>
                     <input className='form-control' id="pic" name="pic" />
@@ -23,6 +27,8 @@ function new_form () {
                     <label htmlFor="city">City</label>
                     <input className='form-control' id="city" name="city" />
                 </div>
+                </div>
+                <div className='col-sm-6 col-md-4 col-lg-3'>
                 <div className='form-group'>
                     <label htmlFor="state">State</label>
                     <input className='form-control' id="state" name="state" />
@@ -31,6 +37,9 @@ function new_form () {
                     <label htmlFor="cuisines">Cuisines</label>
                     <input className='form-control' id="cuisines" name="cuisines" required />
                 </div>
+                </div>
+                </div>
+                <br />
                 <input className='btn btn-primary' type="submit" value="Add Place" />
                 </form>`
             </main>
@@ -40,3 +49,4 @@ function new_form () {
 
 
 module.exports = new_form
+

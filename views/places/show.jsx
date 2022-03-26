@@ -48,7 +48,42 @@ function show (data) {
           </div>
           <h2>Comments</h2>
           {comments}
-          </div>  
+          <h1>Got Your Own Rant or Rave?</h1>
+                    <form method="POST" action={`/places/${data.id}?_method=PUT`}>
+                    <div className='form-group'>
+                      <h3>Content</h3>
+                        <label htmlFor="review box"></label>
+                       <textarea name="review" id="review" cols="60" rows="3"></textarea>
+                    </div>
+                   <div className='row'>
+                    <div className='col'>
+                        <h3>Author</h3>
+                        <input className='form-control' id="name" name="name"  required />
+                    </div>
+                    <div className='col'>
+                    <label class="rating-label">
+                      <h3>Star Rating</h3>
+                        {/* <strong> Star Rating</strong> */}
+                        <input
+                            class="rating"
+                            max="5"
+                            oninput="this.style.setProperty('--value', this.value)"
+                            step="0.5"
+                            type="range"
+                            value="1">
+                                </input>
+                        </label>
+                    </div>
+                    <div className='col'>
+                      <h3>Rant?</h3>
+                       <label>
+                           <input type="checkbox" />
+                       </label>
+                    </div>
+                    </div>
+                    <input className='btn btn-primary' type="submit" value="Add Comment" />
+                    </form>
+                    </div> 
           </main>
               
         </Def>

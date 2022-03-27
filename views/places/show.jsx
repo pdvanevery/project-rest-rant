@@ -49,7 +49,7 @@ function show (data) {
           <h2>Comments</h2>
           {comments}
           <h1>Got Your Own Rant or Rave?</h1>
-                    <form method="POST" action={`/places/${data.id}?_method=PUT`}>
+                    <form method="POST" action= {`/places/${data.place.id}?_method=PUT`}>
                     <div className='form-group'>
                       <h3>Content</h3>
                         <label htmlFor="review box"></label>

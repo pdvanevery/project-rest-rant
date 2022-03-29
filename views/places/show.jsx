@@ -53,7 +53,7 @@ function show (data) {
                     <div className='form-group'>
                       <h3>Content</h3>
                         <label htmlFor="review box"></label>
-                       <textarea name="review" id="review" cols="60" rows="3"></textarea>
+                       <textarea name="content" id="content" cols="60" rows="3"></textarea>
                     </div>
                    <div className='row'>
                     <div className='col'>
@@ -77,7 +77,7 @@ function show (data) {
                     <div className='col'>
                       <h3>Rant?</h3>
                        <label>
-                           <input type="checkbox" />
+                           <input id = "rant" type="checkbox" />
                        </label>
                     </div>
                     </div>

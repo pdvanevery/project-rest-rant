@@ -37,7 +37,7 @@ function show (data) {
             <h2>Description</h2>
             <h3>{data.place.showEstablished()}</h3>
             <h4>Serving {data.place.cuisines}</h4>
-          <a href={`/places/${data.id}/edit`} className="btn btn-warning"> 
+          <a href={`/places/${data.place.id}/edit`} className="btn btn-warning"> 
             Edit
           </a>
           <form method="POST" action={`/places/${data.id}?_method=DELETE`}> 
@@ -49,7 +49,7 @@ function show (data) {
           <h2>Comments</h2>
           {comments}
           <h1>Got Your Own Rant or Rave?</h1>
-                    <form method="POST" action= {`/places/${data.place.id}?_method=PUT`}>
+                    <form method="POST" action= {`/places/${data.place.id}/comment?_method=POST`}>
                     <div className='form-group'>
                       <h3>Content</h3>
                         <label htmlFor="review box"></label>
@@ -58,7 +58,7 @@ function show (data) {
                    <div className='row'>
                     <div className='col'>
                         <h3>Author</h3>
-                        <input className='form-control' id="name" name="name"  required />
+                        <input className='form-control' id="author" name="author"  required />
                     </div>
                     <div className='col'>
                     <label class="rating-label">

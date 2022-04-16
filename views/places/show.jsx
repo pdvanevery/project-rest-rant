@@ -87,10 +87,11 @@ function show (data) {
                         <input className='form-control' id="author" name="author"  required />
                     </div>
                     <div className='col'>
-                    <label class="rating-label">
+                    <label class="rating-label" htmlFor="stars">
                       <h3>Star Rating</h3>
                         {/* <strong> Star Rating</strong> */}
                         <input
+                            name="stars"
                             class="rating"
                             max="5"
                             oninput="this.style.setProperty('--value', this.value)"
@@ -102,8 +103,9 @@ function show (data) {
                     </div>
                     <div className='col'>
                       <h3>Rant?</h3>
-                       <label>
-                           <input id = "rant" type="checkbox" />
+                       <label htmlFor='rant'>
+                           <input id = "rant" type="checkbox" 
+                           name="rant"/>
                        </label>
                     </div>
                     </div>

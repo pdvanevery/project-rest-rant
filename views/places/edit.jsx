@@ -41,7 +41,7 @@ function edit_form (data) {
                 </div>
                 <br />
                     <input className='btn btn-primary' type="submit" value="Update Place" />
-                    </form>`
+                    </form>
                 </main>
             </Def>
         )

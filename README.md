@@ -18,6 +18,8 @@ If you could like to clone this repository:
 3) open terminal in the project folder and run NPM install to download required dependencies 
 4) run NPM start to run the project as well as database (you will probably need to connect it to your own MongoDB database by editing the package-lock.json and replacing my Mongo link with your own)
 
+### Known Issues
+When editing a restaurant, the picture url history is no longer saved, causing the user to have to manually reenter (or paste) the picture url
 
 
 | Method | Path                     | Purpose                                          |
@@ -34,7 +36,7 @@ If you could like to clone this repository:
 | DELETE | /places/:id/rant/:rantId | Delete a rant (comment) about a particular place |
 | GET    | *                        | 404 page (matches any route not defined above)   |
 
-## Restaurants
+## Restaurants (May change based on testing)
 | Name     | City          | State | Cuisines         | Pic |
 |----------|---------------|-------|------------------|-----|
 | Pizza Pi | San Jose      | CA    | Italian          | pic |
